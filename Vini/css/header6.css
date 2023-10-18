@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    background-image: url('../imagem/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+a {
+    font-size: 300%;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 30%;
+}
+.links{
+   text-align: center;
+   font-size: 300%
+    
+}
+.logo {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon i {
+    
+    font-size: 250px;
+    margin-bottom: 10px;
+}
+
+.icon {
+   
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+
+.icon img {
+    text-align: center;
+    width: 200px;
+    height: auto;
+}
+
+
+.paragrafo-com-quadrado {
+    position: relative;
+    padding-left: 20px; /* Adicione algum espaço à esquerda do parágrafo para acomodar o quadrado */
+  }
+  
+  .paragrafo-com-quadrado::before {
+    
+    content: ""; /* Adicione conteúdo vazio ao pseudoelemento */
+    position: absolute;
+    width: 1700px; /* Largura do quadrado */
+    height: 145px; /* Altura do quadrado */
+    border-radius: 10px;
+    border: 6px solid rgb(71, 34, 139);
+    left: 10px; /* Posiciona o quadrado à esquerda do parágrafo */
+    top: 50%; /* Centraliza o quadrado verticalmente no parágrafo */
+    transform: translateY(-50%); /* Ajusta a posição vertical para centralizar */
+  }
